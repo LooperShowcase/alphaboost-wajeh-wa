@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stayl.css" />
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sign up.html">sign up</a></li>
+      <li id="C2"><input id="C1" type="color" onchange="changebg()" /></li>
+      <li id="C2">   <img id="ptata" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" width="70px">
+      </li>
+    </ul>
+<center>
+    <form>
+      <label>email :</label>
+      <input type="email" />
+      <br />
+      <label>password :</label>
+      <input type="password" />
+      <br />
+      <label>first name :</label>
+      <input type="first name" />
+      <br />
+      <label>last name :</label>
+      <input type="last name" />
+      <br>
+      <input type= "file" id="profpic" onchange="Profilechange()">
+
+    
+    </form>
+  </center>
+
+    <p id="myPar">How to log into Instagram on a computer
+      It doesn't matter whether you're logging into — the process is the same.  then enter your  username or the phone number or email address associated with the account. After that, enter your password and tap Log In. </p>
+      <img src="https://alrigh.com/wp-content/uploads/2020/06/How-Do-I-Log-in-to-My-Instagram-Account-with-My-Facebook-Account-browser-1.png"  >
+    <script>
+      function changebg() {
+        var newColor = document.getElementById("C1").value;
+        document.body.style.background = newColor;
+
+      }
+      function Profilechange(){
+          var newimg =document.getElementById("profpic").files[0].name; 
+         document.getElementById("ptata").src=newimg;
+    }
+    </script>
+   
+  </body>
+</html>
